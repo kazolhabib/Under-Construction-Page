@@ -1,0 +1,12 @@
+{
+  "name": "under-construction-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass -w css/style.scss css/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.45.1"
+  }
+}

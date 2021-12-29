@@ -1,72 +1,65 @@
 @font-face {
-  font-family: 'ChunkFive Ex';
+  font-family: "ChunkFive Ex";
   src: url("../fonts/chunkfive-ex/chunkfive-ex.ttf");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'HelveticaNeue';
+  font-family: "HelveticaNeue";
   src: url("../fonts/helveticaneue/helveticaNeueMedium.ttf");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Mont';
+  font-family: "Mont";
   src: url("../fonts/mont/Mont-Regular.eot");
   src: local("Mont Regular"), local("Mont-Regular"), url("../fonts/mont/Mont-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/mont/Mont-Regular.woff") format("woff"), url("../fonts/mont/Mont-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Mont';
+  font-family: "Mont";
   src: url("../fonts/mont/Mont-SemiBold.eot");
   src: local("Mont SemiBold"), local("Mont-SemiBold"), url("../fonts/mont/Mont-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/mont/Mont-SemiBold.woff") format("woff"), url("../fonts/mont/Mont-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Mont';
+  font-family: "Mont";
   src: url("../fonts/mont/Mont-Bold.eot");
   src: local("Mont Bold"), local("Mont-Bold"), url("../fonts/mont/Mont-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/mont/Mont-Bold.woff") format("woff"), url("../fonts/mont/Mont-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Mont';
+  font-family: "Mont";
   src: url("../fonts/mont/Mont-Heavy.eot");
   src: local("Mont Bold"), local("Mont-Bold"), url("../fonts/mont/Mont-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/mont/Mont-Heavy.woff") format("woff"), url("../fonts/mont/Mont-Heavy.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
-
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coming-soon-page {
+  min-height: 100vh;
+  background-color: #3d80e3;
 }
 
 .full-width .colmn {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .full-width .colmn .col1 {
   width: 100%;
   z-index: 1;
 }
-
 .full-width .colmn .col1 .code-image {
   opacity: 1;
 }
-
 .full-width .colmn .col2 {
   width: 100%;
   height: 960px;
@@ -78,7 +71,6 @@ body {
   position: absolute;
   text-align: center;
 }
-
 .full-width .colmn .col2 .text-nagative-right {
   font-family: Courier;
   font-style: normal;
@@ -89,24 +81,21 @@ body {
   margin-left: 500px;
   margin-top: 142px;
 }
-
 .full-width .colmn .col2 .text-work {
   font-family: ChunkFive Ex;
   font-style: normal;
   font-weight: normal;
   font-size: 65px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 1060px;
   margin-top: 122px;
   margin-bottom: 80px;
   text-align: left !important;
 }
-
 .full-width .colmn .col2 .text-yallow {
-  color: #FFD400;
+  color: #ffd400;
 }
-
 .full-width .colmn .col2 .status-btn {
   font-family: HelveticaNeue;
   font-style: normal;
@@ -115,12 +104,11 @@ body {
   line-height: 21px;
   color: #181840;
   text-decoration: none;
-  background: #FFD400;
+  background: #ffd400;
   border-radius: 3px;
   padding: 13px 43px;
   margin-left: 430px;
 }
-
 .full-width .colmn .col2 .text-left {
   font-family: Courier;
   font-style: normal;
@@ -131,4 +119,5 @@ body {
   margin-left: 920px;
   margin-top: 67px;
 }
+
 /*# sourceMappingURL=style.css.map */
