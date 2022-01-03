@@ -46,6 +46,7 @@ body {
       width: 100%;
       height: auto;
       margin-left: 86px;
+      z-index: 10;
 
       // .col-2-under-col{
       //     // padding: 10px;
@@ -58,6 +59,8 @@ body {
         font-size: 48px;
         line-height: 150%;
         color: rgba(247, 248, 252, 0.4);
+        margin-left: -150px;
+        margin-bottom: 122px;
       }
 
       .text-work {
@@ -67,6 +70,7 @@ body {
         font-size: 65px;
         line-height: 150%;
         color: #ffffff;
+        margin-bottom: 89px;
       }
 
       .text-yallow {
@@ -93,6 +97,8 @@ body {
         font-size: 48px;
         line-height: 150%;
         color: rgba(247, 248, 252, 0.4);
+        margin-top: 67px;
+        margin-left: 150px;
       }
     }
   }

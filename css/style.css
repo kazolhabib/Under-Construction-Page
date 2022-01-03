@@ -95,6 +95,7 @@ body {
   width: 100%;
   height: auto;
   margin-left: 86px;
+  z-index: 10;
 }
 
 .full-width .colmn .col2 .text-nagative-right {
@@ -104,6 +105,8 @@ body {
   font-size: 48px;
   line-height: 150%;
   color: rgba(247, 248, 252, 0.4);
+  margin-left: -150px;
+  margin-bottom: 122px;
 }
 
 .full-width .colmn .col2 .text-work {
@@ -113,6 +116,7 @@ body {
   font-size: 65px;
   line-height: 150%;
   color: #ffffff;
+  margin-bottom: 89px;
 }
 
 .full-width .colmn .col2 .text-yallow {
@@ -139,5 +143,7 @@ body {
   font-size: 48px;
   line-height: 150%;
   color: rgba(247, 248, 252, 0.4);
+  margin-top: 67px;
+  margin-left: 150px;
 }
 /*# sourceMappingURL=style.css.map */
