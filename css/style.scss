@@ -19,43 +19,93 @@ body {
     // display: flex;
     // align-items: center;
 
+    
     @include md{
+      // width: 100%;
+      // display: flex;
+      // align-items: center;
+    }
+    // @include lg{
+    //   // width: 100%;
+    //   // display: flex;
+    //   // align-items: center;
+    // }
+
+    @include xl{
       width: 100%;
       display: flex;
       align-items: center;
     }
     
 
-
+// col1 scss start ///////////////////
     .col1 {
       // width: 100%;
       // height: 100vh;
       // display: flex;
 
       @include md{
-        width: 100%;
-        height: 100vh;
+        // width: 100%;
+        // height: auto;
         display: flex;
       }
 
+      @include lg{
+        // width: 100%;
+        // height: 100vh;
+        display: flex;
+      }
+      
+
+      // .image-code{
+      //   width: 90%;
+      // }
+
+      // code image scss start ////////////
       .code-image {
           width: 310px;
           height: auto;
           // opacity: 1;
           // z-index: 1;
 
+          @include sm{
+            width: 400px;
+            height: auto;
+            opacity: 1;
+            z-index: 1;
+          }
+
           @include md{
+            width: 450px;
+            height: auto;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          @include lg{
+            width: 650px;
+            height: auto;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          @include xl{
             width: 960px;
             height: 100vh;
             opacity: 1;
             z-index: 1;
           }
       }
+      // code image scss end ////////////
 
       .image-bg-shape{
         position: absolute;
         // z-index: 9;
         margin-top: -325px; 
+
+        @include sm{
+          margin-top: -405px;
+        }
         
         @include md{
           position: absolute;
@@ -63,62 +113,216 @@ body {
           margin: 0;
         }
       }
+      
       .bg-img{
         width: 337px;
         height: auto;
-        visibility: visible;
+        visibility: hidden;    
 
+        @include sm{
+          width: 405px;
+          height: auto;
+          visibility: visible;
+        }
         @include md{
+          width: 460px;
+          height: auto;
+          visibility: visible;         
+        }
+
+        @include lg{
+          width: 660px;
+          height: auto;
+          visibility: visible;         
+        }
+
+        @include xl{
           width: 961px;
           height: 100vh;
-          visibility: visible;
-          
+          visibility: visible;         
         }
       }
-    }
 
+      .mobile-device-bg{
+        position: absolute;
+        margin-top: -315px;
+
+        @include sm{
+          visibility: hidden;
+        }
+      }
+
+    }
+// col1 scss end ///////////////////
+
+// col2 scss start ///////////////////
     .col2 {
-      width: 100%;
+      // width: 100%;
       // height: auto;
       // margin-left: 86px;
       // z-index: 10;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+      padding-top: 0px;
 
       @include md{
-        width: 100%;
-        height: auto;
-        margin-left: 86px;
-        z-index: 10;
+        // width: 100%;
+        // height: auto;
+        margin-left: 0px;
+        text-align: left;
       }
 
-      // .col-2-under-col{
-      //     // padding: 10px;
-      // }
+      @include lg{
+        // width: 100%;
+        // height: auto;
+        margin-left: 0px;
+        z-index: 10;
+        text-align: left;
+      }
 
-      .text-nagative-right {
+      @include xl{
+        // width: 100%;
+        // height: auto;
+        margin-left: 86px;
+        z-index: 10;
+        text-align: left;
+      }
+
+      .col-2-under-col{
+          text-align: center;
+          @include md{
+            text-align: left;
+          }
+          // @include lg{
+          //   width: 100%;
+          // }
+      }
+// text nagative scss start ///////////////////
+      .text-nagative-right {     
         font-family: Courier;
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
+        font-size: 18px;
         line-height: 150%;
         color: rgba(247, 248, 252, 0.4);
-        margin-left: -150px;
-        margin-bottom: 122px;
-      }
+        margin-left: -130px;
+        margin-bottom: 37px;
 
+      @include sm{
+        font-family: Courier;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 150%;
+        color: rgba(247, 248, 252, 0.4);
+        margin-left: -170px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        }
+
+        @include md{
+          font-family: Courier;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 150%;
+          color: rgba(247, 248, 252, 0.4);
+          margin-left: 0px;
+          margin-bottom: 50px;
+          }
+
+          @include lg{
+            font-family: Courier;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 38px;
+            line-height: 150%;
+            color: rgba(247, 248, 252, 0.4);
+            margin-left: 0px;
+            margin-bottom: 50px;
+            }
+
+            @include xl{
+              font-family: Courier;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 48px;
+              line-height: 150%;
+              color: rgba(247, 248, 252, 0.4);
+              margin-left: -150px;
+              margin-bottom: 122px;
+              }
+      }
+// text nagative scss end ///////////////////
+
+// text work scss start ///////////////////
       .text-work {
         font-family: ChunkFive Ex;
         font-style: normal;
         font-weight: normal;
-        font-size: 65px;
+        font-size: 33px;
+        line-height: 130%;
+        color: #ffffff;
+        margin-bottom: 52px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        @include sm{
+        font-family: ChunkFive Ex;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45px;
         line-height: 150%;
         color: #ffffff;
-        margin-bottom: 89px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+        margin-right: 70px;
+        }
+
+        @include md{
+          font-family: ChunkFive Ex;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 50px;
+          line-height: 150%;
+          color: #ffffff;
+          margin-bottom: 60px;
+          margin-left: 0px;
+          margin-right: 265px;
+          }
+
+          @include lg{
+            font-family: ChunkFive Ex;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 58px;
+            line-height: 150%;
+            color: #ffffff;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            margin-right: 265px;
+            }
+
+            @include xl{
+              font-family: ChunkFive Ex;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 65px;
+              line-height: 150%;
+              color: #ffffff;
+              margin-bottom: 89px;
+              margin-left: 0px;
+              margin-right: 265px;
+              }
       }
 
       .text-yallow {
         color: #ffd400;
       }
+// text nagative scss end ///////////////////
 
+// status btn scss start ///////////////////
       .status-btn {
         font-family: HelveticaNeue;
         font-style: normal;
@@ -130,18 +334,78 @@ body {
         background: #ffd400;
         border-radius: 3px;
         padding: 13px 43px;
-      }
 
+        // @include sm{
+        // font-family: HelveticaNeue;
+        // font-style: normal;
+        // font-weight: normal;
+        // font-size: 18px;
+        // line-height: 21px;
+        // color: #181840;
+        // text-decoration: none;
+        // background: #ffd400;
+        // border-radius: 3px;
+        // padding: 13px 43px;
+        // }
+      }
+// status btn scss end ///////////////////
+
+// text left scss start ///////////////////
       .text-left {
         font-family: Courier;
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(247, 248, 252, 0.4);
+        margin-top: 63px;
+        // margin-left: 150px;
+        margin-left: 130px;
+
+        @include sm{
+        font-family: Courier;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
         line-height: 150%;
         color: rgba(247, 248, 252, 0.4);
         margin-top: 67px;
-        margin-left: 150px;
+        margin-left: 170px;
+        }
+
+        @include md{
+          font-family: Courier;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 150%;
+          color: rgba(247, 248, 252, 0.4);
+          margin-top: 67px;
+          margin-left: 0px;
+          }
+
+          @include lg{
+            font-family: Courier;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 38px;
+            line-height: 150%;
+            color: rgba(247, 248, 252, 0.4);
+            margin-top: 67px;
+            margin-left: 0px;
+            }
+            @include xl{
+              font-family: Courier;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 48px;
+              line-height: 150%;
+              color: rgba(247, 248, 252, 0.4);
+              margin-top: 67px;
+              margin-left: 150px;
+              }
       }
+      // text left scss end ///////////////////
     }
   }
 }
